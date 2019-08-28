@@ -32,7 +32,7 @@ jest.doMock('react-native/Libraries/Components/Picker/Picker', () => {
 
 // Re-mock ReactNative with native methods mocked
 jest
-  .mock('NativeAnimatedHelper')
+  .mock('react-native/Libraries/Animated/src/NativeAnimatedHelper')
   .doMock('react-native/Libraries/Renderer/shims/ReactNative', () => {
     const ReactNative = jest.requireActual('react-native/Libraries/Renderer/shims/ReactNative');
     const NativeMethodsMixin =
